@@ -9,7 +9,10 @@ module org.example.radiomodelpractic {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires org.xerial.sqlitejdbc;
+    requires java.desktop;
 
+    opens Domain to javafx.base;
     opens org.example.radiomodelpractic to javafx.fxml;
     exports org.example.radiomodelpractic;
 }
